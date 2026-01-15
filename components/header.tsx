@@ -1,9 +1,10 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Phone, Menu, X, Shield, Flame } from "lucide-react"
+import { Phone, Menu, X, Shield } from "lucide-react"
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -40,9 +41,7 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-lg">
-              <Flame className="h-6 w-6 text-primary-foreground" />
-            </div>
+            <Image src="/logo-removebg.png" alt="FireGuard Pro Solutions" width={40} height={40} />
             <div className="flex flex-col">
               <span className="text-lg font-bold text-foreground leading-tight">FireGuard</span>
               <span className="text-xs text-muted-foreground leading-tight">Pro Solutions</span>

@@ -1,5 +1,6 @@
+import Image from "next/image"
 import Link from "next/link"
-import { Flame, Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin } from "lucide-react"
 
 const footerLinks = {
   services: [
@@ -30,9 +31,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-lg">
-                <Flame className="h-6 w-6 text-primary-foreground" />
-              </div>
+              <Image src="/logo-removebg.png" alt="FireGuard Pro Solutions" width={40} height={40} />
               <div className="flex flex-col">
                 <span className="text-lg font-bold leading-tight">FireGuard</span>
                 <span className="text-xs text-background/70 leading-tight">Pro Solutions</span>
