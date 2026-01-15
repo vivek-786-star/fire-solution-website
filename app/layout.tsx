@@ -12,7 +12,10 @@ export const metadata: Metadata = {
   title: "Ramdas G Fabricator | Complete Fire Safety Solutions",
   description:
     "Professional fire safety equipment, detection systems, suppression solutions, and compliance services. 24/7 Emergency Support. ISO Certified.",
-    generator: 'v0.app'
+    generator: 'v0.app',
+  icons: {
+    icon: '/logo-removebg.png',
+  },
 }
 
 export default function RootLayout({
