@@ -29,8 +29,8 @@ export function Header() {
             8080848849
           </a>
           <span>/</span>
-          <a href="tel:+917309493160" className="underline font-bold">
-            7309493160
+          <a href="tel:+918250478736" className="underline font-bold">
+            8250478736
           </a>
         </div>
       </div>

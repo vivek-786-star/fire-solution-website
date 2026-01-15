@@ -15,13 +15,13 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["8080848849", "7309493160"],
+    details: ["8080848849", "8250478736"],
     description: "24/7 Emergency Support Available",
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@fireguardpro.com", "support@fireguardpro.com"],
+    details: ["ramdasgfabricator@gmail.com"],
     description: "We respond within 24 hours",
   },
   {

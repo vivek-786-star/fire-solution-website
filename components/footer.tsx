@@ -47,14 +47,14 @@ export function Footer() {
                 className="flex items-center gap-2 text-background/70 hover:text-background transition-colors"
               >
                 <Phone className="h-4 w-4 text-primary" />
-                8080848849 / 7309493160
+                8080848849 / 8250478736
               </a>
               <a
-                href="mailto:info@fireguardpro.com"
+                href="mailto:ramdasgfabricator@gmail.com"
                 className="flex items-center gap-2 text-background/70 hover:text-background transition-colors"
               >
                 <Mail className="h-4 w-4 text-primary" />
-                info@fireguardpro.com
+                ramdasgfabricator@gmail.com
               </a>
               <span className="flex items-start gap-2 text-background/70">
                 <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
