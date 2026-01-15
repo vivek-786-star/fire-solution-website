@@ -41,10 +41,10 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/logo-removebg.png" alt="FireGuard Pro Solutions" width={40} height={40} />
+            <Image src="/logo-removebg.png" alt="Ramdas G Fabricator" width={40} height={40} />
             <div className="flex flex-col">
-              <span className="text-lg font-bold text-foreground leading-tight">FireGuard</span>
-              <span className="text-xs text-muted-foreground leading-tight">Pro Solutions</span>
+              <span className="text-lg font-bold text-foreground leading-tight">Ramdas G</span>
+              <span className="text-xs text-muted-foreground leading-tight">Fabricator</span>
             </div>
           </Link>
 

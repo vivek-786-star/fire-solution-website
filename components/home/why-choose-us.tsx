@@ -67,7 +67,7 @@ export function WhyChooseUs() {
 
           {/* Image */}
           <div className="relative">
-            <img src="/professional-fire-safety-team-engineers-with-equip.jpg" alt="FireGuard Pro team" className="w-full rounded-2xl shadow-xl" />
+            <img src="/professional-fire-safety-team-engineers-with-equip.jpg" alt="Ramdas G Fabricator team" className="w-full rounded-2xl shadow-xl" />
             {/* Badge */}
             <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-xl shadow-lg">
               <div className="flex items-center gap-4">

@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "FireGuard Pro | Complete Fire Safety Solutions",
+  title: "Ramdas G Fabricator | Complete Fire Safety Solutions",
   description:
     "Professional fire safety equipment, detection systems, suppression solutions, and compliance services. 24/7 Emergency Support. ISO Certified.",
     generator: 'v0.app'

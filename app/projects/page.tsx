@@ -244,7 +244,7 @@ export default function ProjectsPage() {
             <div className="mb-8">
               <Building className="h-12 w-12 text-primary mx-auto mb-4" />
               <blockquote className="text-2xl font-medium text-foreground leading-relaxed mb-6 text-balance">
-                "FireGuard Pro delivered exceptional service for our hospital project. Their attention to healthcare
+                "Ramdas G Fabricator delivered exceptional service for our hospital project. Their attention to healthcare
                 compliance and patient safety was impressive. The system has been running flawlessly."
               </blockquote>
               <div>

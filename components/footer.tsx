@@ -31,10 +31,10 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <Image src="/logo-removebg.png" alt="FireGuard Pro Solutions" width={40} height={40} />
+              <Image src="/logo-removebg.png" alt="Ramdas G Fabricator" width={40} height={40} />
               <div className="flex flex-col">
-                <span className="text-lg font-bold leading-tight">FireGuard</span>
-                <span className="text-xs text-background/70 leading-tight">Pro Solutions</span>
+                <span className="text-lg font-bold leading-tight">Ramdas G</span>
+                <span className="text-xs text-background/70 leading-tight">Fabricator</span>
               </div>
             </Link>
             <p className="text-sm text-background/70 leading-relaxed">
@@ -116,7 +116,7 @@ export function Footer() {
               <span className="px-2 py-1 bg-background/10 rounded">Licensed & Insured</span>
             </div>
             <p className="text-xs text-background/60">
-              © {new Date().getFullYear()} FireGuard Pro Solutions. All rights reserved.
+              © {new Date().getFullYear()} Ramdas G Fabricator. All rights reserved.
             </p>
           </div>
         </div>

@@ -15,7 +15,7 @@ const milestones = [
 
 const team = [
   {
-    name: "Robert Chen",
+    Ramdas G,
     role: "CEO & Founder",
     image: "/professional-business-executive-ceo-portrait.jpg",
   },
@@ -59,7 +59,7 @@ export default function AboutPage() {
                 Protecting Lives & Property Since 2003
               </h1>
               <p className="text-lg text-background/80 leading-relaxed">
-                FireGuard Pro Solutions is a leading fire safety company dedicated to providing comprehensive fire
+                Ramdas G Fabricator is a leading fire safety company dedicated to providing comprehensive fire
                 protection services. With over two decades of experience, we've helped hundreds of businesses and
                 institutions create safer environments.
               </p>
@@ -113,7 +113,7 @@ export default function AboutPage() {
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Founded in 2003 by fire safety veteran Robert Chen, FireGuard Pro Solutions began as a small team
+                    Founded in 2003 by fire safety veteran Robert Chen, Ramdas G Fabricator began as a small team
                     passionate about making professional fire safety accessible to businesses of all sizes.
                   </p>
                   <p>
@@ -130,7 +130,7 @@ export default function AboutPage() {
               <div className="relative">
                 <img
                   src="/fire-safety-company-office-team-meeting.jpg"
-                  alt="FireGuard Pro team meeting"
+                  alt="Ramdas G Fabricator team meeting"
                   className="w-full rounded-2xl shadow-xl"
                 />
               </div>
@@ -262,7 +262,7 @@ export default function AboutPage() {
               Ready to Work With Us?
             </h2>
             <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Join hundreds of businesses that trust FireGuard Pro for their fire safety needs.
+              Join hundreds of businesses that trustRamdas G Fabricatorfor their fire safety needs.
             </p>
             <Button asChild size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
               <Link href="/contact">
