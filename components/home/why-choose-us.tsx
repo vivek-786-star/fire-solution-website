@@ -15,7 +15,7 @@ const reasons = [
     icon: Award,
     title: "20+ Years Experience",
     description:
-      "Two decades of expertise in fire safety solutions across residential, commercial, and industrial sectors.",
+      "Two decades of expertise in fire safety system installation across residential, commercial, and industrial sectors.",
   },
   {
     icon: Users,
@@ -47,7 +47,7 @@ export function WhyChooseUs() {
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
               When it comes to fire safety, there's no room for compromise. We combine cutting-edge technology with
-              experienced professionals to deliver solutions that protect what matters most.
+              experienced professionals to deliver expert fire safety installation services that protect what matters most.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">

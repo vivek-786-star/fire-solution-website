@@ -4,10 +4,10 @@ import { Phone, Mail, MapPin } from "lucide-react"
 
 const footerLinks = {
   services: [
-    { name: "Fire Detection Systems", href: "/services#detection" },
-    { name: "Fire Suppression", href: "/services#suppression" },
-    { name: "Safety Audits", href: "/services#audits" },
-    { name: "AMC Services", href: "/services#amc" },
+    { name: "Fire Fighting Equipment Installation", href: "/services#equipment-installation" },
+    { name: "Fire Extinguisher Refilling", href: "/services#extinguisher-refilling" },
+    { name: "Hydrant System Installation", href: "/services#hydrant-installation" },
+    { name: "Sprinkler & Alarm System Installation", href: "/services#sprinkler-alarm-installation" },
   ],
   company: [
     { name: "About Us", href: "/about" },

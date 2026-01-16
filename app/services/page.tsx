@@ -23,84 +23,80 @@ import {
 
 const services = [
   {
-    id: "detection",
-    icon: AlertTriangle,
-    title: "Fire Detection Systems",
-    description:
-      "Advanced fire detection solutions that provide early warning and protect your premises from potential fire hazards.",
-    features: [
-      { icon: Bell, text: "Conventional & Addressable Fire Alarm Systems" },
-      { icon: Gauge, text: "Smoke Detectors & Heat Sensors" },
-      { icon: Zap, text: "Beam Detectors & Flame Detectors" },
-      { icon: Shield, text: "Integrated Building Management Systems" },
-    ],
-    benefits: [
-      "Early fire detection within seconds",
-      "Reduced false alarms with intelligent sensors",
-      "24/7 monitoring capabilities",
-      "Compliance with fire safety codes",
-    ],
-    image: "/fire-detection-system-smoke-detector-installation.jpg",
-  },
-  {
-    id: "suppression",
-    icon: Droplets,
-    title: "Fire Suppression Systems",
-    description:
-      "Comprehensive fire suppression solutions designed to quickly contain and extinguish fires, minimizing damage.",
-    features: [
-      { icon: Droplets, text: "Automatic Sprinkler Systems" },
-      { icon: Flame, text: "CO2 & Clean Agent Flooding Systems" },
-      { icon: Gauge, text: "Foam Suppression Systems" },
-      { icon: Shield, text: "Kitchen Hood Suppression Systems" },
-    ],
-    benefits: [
-      "Rapid fire containment",
-      "Minimal water damage with targeted suppression",
-      "Protection for sensitive equipment",
-      "Insurance premium reductions",
-    ],
-    image: "/fire-suppression-sprinkler-system-commercial.jpg",
-  },
-  {
-    id: "audits",
-    icon: ClipboardCheck,
-    title: "Safety Audits & Training",
-    description:
-      "Comprehensive fire safety assessments and training programs to ensure your organization is prepared for emergencies.",
-    features: [
-      { icon: FileCheck, text: "Complete Fire Risk Assessment" },
-      { icon: ClipboardCheck, text: "Compliance Audits & Documentation" },
-      { icon: Users, text: "Staff Fire Safety Training" },
-      { icon: Shield, text: "Emergency Evacuation Planning" },
-    ],
-    benefits: [
-      "Identify and mitigate fire risks",
-      "Meet regulatory compliance requirements",
-      "Trained staff for emergency response",
-      "Documented safety procedures",
-    ],
-    image: "/fire-safety-audit-inspection-professional.jpg",
-  },
-  {
-    id: "amc",
+    id: "equipment-installation",
     icon: Wrench,
-    title: "AMC Services",
-    description:
-      "Annual Maintenance Contracts to keep your fire safety systems in optimal condition with regular inspections and servicing.",
+    title: "Fire Fighting Equipment Installation",
+    description: "We are authorised installers for all kinds of fire fighting equipment. Our expert team ensures that your equipment is installed to the highest standards for optimal performance and reliability.",
     features: [
-      { icon: Calendar, text: "Scheduled Preventive Maintenance" },
-      { icon: Settings, text: "System Testing & Calibration" },
-      { icon: Wrench, text: "Emergency Repair Services" },
-      { icon: FileCheck, text: "Detailed Service Reports" },
+      { icon: Shield, text: "Installation of Fire Extinguishers" },
+      { icon: Shield, text: "Installation of Fire Hose Reels" },
+      { icon: Shield, text: "Installation of Fire Pumps" },
+      { icon: Shield, text: "Installation of Fire Cabinets" },
     ],
     benefits: [
-      "Extended equipment lifespan",
-      "Reduced breakdown risks",
-      "Priority emergency support",
-      "Maintained compliance status",
+      "Professional and compliant installation",
+      "Ensures optimal equipment performance",
+      "Reduces risk of equipment failure",
+      "Peace of mind knowing your equipment is installed correctly",
     ],
-    image: "/fire-safety-equipment-maintenance-service.jpg",
+    image: "/professional-fire-safety-equipment-installation-te.jpg",
+  },
+  {
+    id: "extinguisher-refilling",
+    icon: Flame,
+    title: "Fire Extinguisher Refilling",
+    description: "We provide professional fire extinguisher refilling services for all types of extinguishers. We ensure that your extinguishers are always ready for an emergency.",
+    features: [
+      { icon: CheckCircle, text: "Refilling of all extinguisher types (ABC, CO2, Water, Foam)" },
+      { icon: CheckCircle, text: "Pressure testing and certification" },
+      { icon: CheckCircle, text: "On-site and off-site refilling services" },
+      { icon: CheckCircle, text: "Compliance with safety standards" },
+    ],
+    benefits: [
+      "Ensures extinguishers are always ready",
+      "Extends the life of your equipment",
+      "Cost-effective solution",
+      "Compliance with fire safety regulations",
+    ],
+    image: "/abc-dry-chemical-fire-extinguisher-red-portable.jpg",
+  },
+  {
+    id: "hydrant-installation",
+    icon: Droplets,
+    title: "Hydrant System Installation",
+    description: "Our team specializes in the design and installation of hydrant systems for residential, commercial, and industrial properties. We ensure a reliable water supply for firefighting.",
+    features: [
+      { icon: Settings, text: "Design and layout of hydrant systems" },
+      { icon: Wrench, text: "Installation of wet and dry riser systems" },
+      { icon: Shield, text: "Installation of fire pumps and tanks" },
+      { icon: CheckCircle, text: "Testing and commissioning of the system" },
+    ],
+    benefits: [
+      "Reliable water supply for firefighting",
+      "Compliance with building codes",
+      "Increased safety for occupants",
+      "Reduced risk of property damage",
+    ],
+    image: "/fire-hydrant-valve-brass-chrome-industrial.jpg",
+  },
+  {
+    id: "sprinkler-alarm-installation",
+    icon: Bell,
+    title: "Sprinkler & Alarm System Installation",
+    description: "We install state-of-the-art sprinkler and alarm systems for automatic fire detection and suppression. Our systems are designed to provide early warnings and minimize damage.",
+    features: [
+      { icon: Bell, text: "Installation of smoke detectors and heat sensors" },
+      { icon: Droplets, text: "Installation of automatic sprinkler systems" },
+      { icon: Zap, text: "Integration with building management systems" },
+      { icon: Users, text: "User training and system handover" },
+    ],
+    benefits: [
+      "Early detection and warning",
+      "Automatic fire suppression",
+      "Reduced risk of injury and property damage",
+      "24/7 protection for your property",
+    ],
+    image: "/fire-sprinkler-system-wet-pipe-commercial-installa.jpg",
   },
 ]
 
@@ -114,10 +110,9 @@ export default function ServicesPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">Our Services</p>
-              <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">Comprehensive Fire Safety Solutions</h1>
+              <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">Fire Fighting System Installation Services</h1>
               <p className="text-lg text-background/80 leading-relaxed">
-                From detection to suppression, audits to maintenance - we provide end-to-end fire safety services
-                tailored to your specific requirements.
+                Specializing in the installation of fire fighting equipment, hydrant systems, sprinkler systems, alarm systems, and providing fire extinguisher refilling services.
               </p>
             </div>
           </div>

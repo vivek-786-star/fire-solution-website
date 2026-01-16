@@ -25,13 +25,12 @@ export function HeroSection() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-balance">
-              Complete Fire Safety Solutions for Your
-              <span className="text-primary"> Peace of Mind</span>
+              Specialist in Fire Fighting
+              <span className="text-primary"> System Installation</span>
             </h1>
 
             <p className="text-lg text-background/80 leading-relaxed max-w-xl">
-              From detection systems to suppression equipment, we provide comprehensive fire protection services backed
-              by 20+ years of expertise. Protecting lives and property is our mission.
+              Authorised for all kinds of fire fighting equipment, fire extinguisher refilling, hydrant systems, sprinkler systems & alarm systems. We provide expert fire safety installation services.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

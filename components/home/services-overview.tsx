@@ -6,27 +6,27 @@ import { AlertTriangle, Droplets, ClipboardCheck, Wrench, ArrowRight } from "luc
 const services = [
   {
     icon: AlertTriangle,
-    title: "Fire Detection Systems",
-    description: "Advanced smoke alarms, heat detectors, and integrated fire alarm systems for early threat detection.",
-    href: "/services#detection",
-  },
-  {
-    icon: Droplets,
-    title: "Fire Suppression",
-    description: "Sprinkler systems, CO2 flooding systems, and foam suppression for rapid fire containment.",
-    href: "/services#suppression",
-  },
-  {
-    icon: ClipboardCheck,
-    title: "Safety Audits & Training",
-    description: "Comprehensive fire safety audits, risk assessments, and staff training programs.",
-    href: "/services#audits",
+    title: "Fire Fighting Equipment Installation",
+    description: "Installation of all kinds of fire fighting equipment.",
+    href: "/services#equipment",
   },
   {
     icon: Wrench,
-    title: "AMC Services",
-    description: "Annual maintenance contracts ensuring your fire safety equipment is always operational.",
-    href: "/services#amc",
+    title: "Fire Extinguisher Refilling",
+    description: "Professional refilling services for all types of fire extinguishers.",
+    href: "/services#refilling",
+  },
+  {
+    icon: Droplets,
+    title: "Hydrant System Installation",
+    description: "Expert installation of fire hydrant systems for reliable water supply.",
+    href: "/services#hydrant",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Sprinkler & Alarm System Installation",
+    description: "Installation of automatic sprinkler and fire alarm systems.",
+    href: "/services#sprinkler-alarm",
   },
 ]
 
@@ -38,11 +38,10 @@ export function ServicesOverview() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">Our Services</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">
-            Comprehensive Fire Protection Services
+            Our Fire Safety Installation Services
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            We offer end-to-end fire safety solutions tailored to your specific needs, ensuring complete protection for
-            your premises.
+            We are specialists in the installation of fire fighting systems. Our services include:
           </p>
         </div>
 

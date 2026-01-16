@@ -9,9 +9,9 @@ const inter = Inter({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Ramdas G Fabricator | Complete Fire Safety Solutions",
+  title: "Fire Fighting System Installation | Ramdas G Fabricator",
   description:
-    "Professional fire safety equipment, detection systems, suppression solutions, and compliance services. 24/7 Emergency Support. ISO Certified.",
+    "Specialists in fire fighting system installation. We are authorised for all kinds of fire fighting equipment, fire extinguisher refilling, hydrant systems, sprinkler systems & alarm systems.",
     generator: 'v0.app',
   icons: {
     icon: '/logo-removebg.png',

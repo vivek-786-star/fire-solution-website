@@ -10,7 +10,7 @@ const milestones = [
   { year: "2008", title: "GST Registration", description: "Registered with GST No: 27AHJPC2124M2ZF." },
   { year: "2012", title: "National Expansion", description: "Expanded operations to serve clients nationwide." },
   { year: "2018", title: "100+ Projects", description: "Completed our 100th successful installation project." },
-  { year: "2023", title: "Industry Leader", description: "Recognized as a leading fire safety solutions provider." },
+  { year: "2023", title: "Industry Leader", description: "Recognized as a leading fire safety installation provider." },
 ]
 
 const team = [
@@ -56,12 +56,10 @@ export default function AboutPage() {
             <div className="max-w-3xl">
               <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">About Us</p>
               <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">
-                Protecting Lives & Property Since 2003
+                Experts in Fire Fighting System Installation
               </h1>
               <p className="text-lg text-background/80 leading-relaxed">
-                Ramdas G Fabricator is a leading fire safety company dedicated to providing comprehensive fire
-                protection services. With over two decades of experience, we've helped hundreds of businesses and
-                institutions create safer environments.
+                Ramdas G Fabricator is a leading fire safety company specializing in the installation of comprehensive fire protection systems. With over two decades of experience, we've helped hundreds of businesses and institutions create safer environments through expert installation services.
               </p>
             </div>
           </div>
@@ -78,7 +76,7 @@ export default function AboutPage() {
                   </div>
                   <h2 className="text-2xl font-bold text-foreground">Our Mission</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    To provide exceptional fire safety solutions that protect lives, property, and business continuity.
+                    To provide exceptional fire safety system installation services that protect lives, property, and business continuity.
                     We are committed to delivering innovative, reliable, and cost-effective fire protection systems
                     while maintaining the highest standards of quality and customer service.
                   </p>
@@ -92,9 +90,9 @@ export default function AboutPage() {
                   </div>
                   <h2 className="text-2xl font-bold text-foreground">Our Vision</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    To be the most trusted name in fire safety, recognized for our expertise, innovation, and unwavering
+                    To be the most trusted name in fire safety installation, recognized for our expertise, innovation, and unwavering
                     commitment to protecting communities. We envision a future where every building has access to
-                    world-class fire protection systems.
+                    world-class fire protection systems installed by certified professionals.
                   </p>
                 </CardContent>
               </Card>
@@ -114,7 +112,7 @@ export default function AboutPage() {
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
                     Founded in 2003 by fire safety veteran Robert Chen, Ramdas G Fabricator began as a small team
-                    passionate about making professional fire safety accessible to businesses of all sizes.
+                    passionate about providing professional fire safety system installation to businesses of all sizes.
                   </p>
                   <p>
                     What started as a local operation has grown into a nationwide service provider, but our core values
@@ -218,7 +216,7 @@ export default function AboutPage() {
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-8">
                   Our certifications demonstrate our commitment to quality and compliance with industry standards. We
-                  maintain all necessary licenses and accreditations to deliver professional fire safety services.
+                  maintain all necessary licenses and accreditations to deliver professional fire safety installation services.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {certifications.map((cert) => (
@@ -233,7 +231,7 @@ export default function AboutPage() {
                 <div className="bg-muted p-8 rounded-xl flex flex-col items-center justify-center text-center">
                   <Award className="h-12 w-12 text-primary mb-4" />
                   <p className="text-3xl font-bold text-foreground">GST</p>
-                  <p className="text-sm text-muted-foreground">9001:2015</p>
+                  <p className="text-sm text-muted-foreground">Registered</p>
                 </div>
                 <div className="bg-muted p-8 rounded-xl flex flex-col items-center justify-center text-center">
                   <Shield className="h-12 w-12 text-primary mb-4" />
