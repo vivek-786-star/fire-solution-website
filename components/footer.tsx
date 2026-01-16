@@ -38,7 +38,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-sm text-background/70 leading-relaxed">
-              Your trusted partner for comprehensive fire safety solutions. ISO certified with 20+ years of excellence.
+              Your trusted partner for comprehensive fire safety solutions. GST No: 27AHJPC2124M2ZF with 20+ years of excellence.
             </p>
             <div className="flex flex-col gap-2 text-sm">
               <a
@@ -111,7 +111,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-background/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-4 text-xs text-background/60">
-              <span className="px-2 py-1 bg-background/10 rounded">ISO 9001:2015</span>
+              <span className="px-2 py-1 bg-background/10 rounded">GST No: 27AHJPC2124M2ZF</span>
               <span className="px-2 py-1 bg-background/10 rounded">Fire Dept. Approved</span>
               <span className="px-2 py-1 bg-background/10 rounded">Licensed & Insured</span>
             </div>

@@ -4,7 +4,7 @@ const reasons = [
   {
     icon: Shield,
     title: "Licensed & Certified",
-    description: "ISO 9001:2015 certified with all necessary fire department approvals and licenses.",
+    description: "GST No: 27AHJPC2124M2ZF with all necessary fire department approvals and licenses.",
   },
   {
     icon: Clock,

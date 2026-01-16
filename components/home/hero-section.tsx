@@ -21,7 +21,7 @@ export function HeroSection() {
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/20 rounded-full text-sm font-medium text-primary">
               <Shield className="h-4 w-4" />
-              ISO 9001:2015 Certified
+              GST No: 27AHJPC2124M2ZF
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-balance">

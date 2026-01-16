@@ -307,7 +307,7 @@ export default function ProductsPage() {
                 </p>
                 <div className="space-y-4">
                   {[
-                    "ISO certified products",
+                    "GST No: 27AHJPC2124M2ZF certified products",
                     "Fire department approved equipment",
                     "Full manufacturer warranty",
                     "Technical support & training",

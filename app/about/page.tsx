@@ -7,7 +7,7 @@ import { Shield, Target, Eye, Award, Users, Clock, CheckCircle, ArrowRight } fro
 
 const milestones = [
   { year: "2003", title: "Company Founded", description: "Started with a vision to make fire safety accessible." },
-  { year: "2008", title: "ISO Certification", description: "Achieved ISO 9001:2008 quality management certification." },
+  { year: "2008", title: "GST Registration", description: "Registered with GST No: 27AHJPC2124M2ZF." },
   { year: "2012", title: "National Expansion", description: "Expanded operations to serve clients nationwide." },
   { year: "2018", title: "100+ Projects", description: "Completed our 100th successful installation project." },
   { year: "2023", title: "Industry Leader", description: "Recognized as a leading fire safety solutions provider." },
@@ -37,7 +37,7 @@ const team = [
 ]
 
 const certifications = [
-  "ISO 9001:2015 Quality Management",
+  "GST Registration",
   "Fire Department Approved Vendor",
   "Licensed Fire Protection Contractor",
   "NFPA Member Organization",
@@ -232,7 +232,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-muted p-8 rounded-xl flex flex-col items-center justify-center text-center">
                   <Award className="h-12 w-12 text-primary mb-4" />
-                  <p className="text-3xl font-bold text-foreground">ISO</p>
+                  <p className="text-3xl font-bold text-foreground">GST</p>
                   <p className="text-sm text-muted-foreground">9001:2015</p>
                 </div>
                 <div className="bg-muted p-8 rounded-xl flex flex-col items-center justify-center text-center">
