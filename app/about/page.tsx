@@ -9,7 +9,7 @@ const milestones = [
   { year: "2003", title: "Company Founded", description: "Started with a vision to make fire safety accessible." },
   { year: "2008", title: "ISO Certification", description: "Achieved ISO 9001:2008 quality management certification." },
   { year: "2012", title: "National Expansion", description: "Expanded operations to serve clients nationwide." },
-  { year: "2018", title: "500+ Projects", description: "Completed our 500th successful installation project." },
+  { year: "2018", title: "100+ Projects", description: "Completed our 100th successful installation project." },
   { year: "2023", title: "Industry Leader", description: "Recognized as a leading fire safety solutions provider." },
 ]
 
@@ -121,7 +121,7 @@ export default function AboutPage() {
                     remain unchanged: integrity, quality, and an unwavering commitment to our clients' safety.
                   </p>
                   <p>
-                    Today, we're proud to serve over 500 clients across commercial, industrial, healthcare, and
+                    Today, we're proud to serve over 100 clients across commercial, industrial, healthcare, and
                     hospitality sectors, with a team of certified experts and partnerships with leading equipment
                     manufacturers.
                   </p>
@@ -242,7 +242,7 @@ export default function AboutPage() {
                 </div>
                 <div className="bg-muted p-8 rounded-xl flex flex-col items-center justify-center text-center">
                   <Users className="h-12 w-12 text-primary mb-4" />
-                  <p className="text-3xl font-bold text-foreground">500+</p>
+                  <p className="text-3xl font-bold text-foreground">100+</p>
                   <p className="text-sm text-muted-foreground">Happy Clients</p>
                 </div>
                 <div className="bg-muted p-8 rounded-xl flex flex-col items-center justify-center text-center">

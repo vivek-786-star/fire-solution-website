@@ -139,7 +139,7 @@ export default function ProjectsPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
-                <p className="text-3xl font-bold text-primary">500+</p>
+                <p className="text-3xl font-bold text-primary">100+</p>
                 <p className="text-sm text-muted-foreground">Projects Completed</p>
               </div>
               <div>

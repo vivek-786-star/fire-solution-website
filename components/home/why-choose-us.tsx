@@ -43,7 +43,7 @@ export function WhyChooseUs() {
           <div>
             <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">Why Choose Us</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6 text-balance">
-              Trusted by 500+ Businesses Across the Nation
+              Trusted by 100+ Businesses Across the Nation
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
               When it comes to fire safety, there's no room for compromise. We combine cutting-edge technology with

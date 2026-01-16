@@ -76,7 +76,7 @@ export function HeroSection() {
               <div className="absolute bottom-4 left-4 right-4 bg-card/95 backdrop-blur-sm rounded-xl p-4">
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div>
-                    <p className="text-2xl font-bold text-primary">500+</p>
+                    <p className="text-2xl font-bold text-primary">100+</p>
                     <p className="text-xs text-muted-foreground">Projects Done</p>
                   </div>
                   <div>
