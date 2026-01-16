@@ -15,7 +15,7 @@ const milestones = [
 
 const team = [
   {
-    Ramdas G,
+    name: "Ramdas G",
     role: "CEO & Founder",
     image: "/professional-business-executive-ceo-portrait.jpg",
   },
