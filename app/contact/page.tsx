@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
@@ -28,7 +28,7 @@ const contactInfo = [
     icon: MapPin,
     title: "Address",
     details: ["5, Tank Road, Satyavijay Society,", "Miniland, Panchsheel Nagar,", "Bhandup West, Mumbai 400078"],
-    description: "Visit our showroom",
+    description: "Visit our Office",
   },
   {
     icon: Clock,
@@ -55,12 +55,51 @@ export default function ContactPage() {
     company: "",
     service: "",
     message: "",
-  })
-  const [isSubmitted, setIsSubmitted] = useState(false)
+  });
+  const [submissionStatus, setSubmissionStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitted(true)
+  useEffect(() => {
+    if (submissionStatus === "success") {
+      const timer = setTimeout(() => {
+        setSubmissionStatus("idle");
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [submissionStatus]);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmissionStatus("loading");
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formState),
+      });
+
+      if (response.ok) {
+        setSubmissionStatus("success");
+        setFormState({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          service: "",
+          message: "",
+        });
+      } else {
+        setSubmissionStatus("error");
+      }
+    } catch (error) {
+      setSubmissionStatus("error");
+    }
+  };
+
+  const resetForm = () => {
+    setSubmissionStatus("idle");
   }
 
   return (
@@ -118,7 +157,7 @@ export default function ContactPage() {
                   Fill out the form below and our team will get back to you within 24 hours.
                 </p>
 
-                {isSubmitted ? (
+                {submissionStatus === "success" ? (
                   <Card className="bg-muted border-border">
                     <CardContent className="p-8 text-center space-y-4">
                       <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
@@ -129,7 +168,7 @@ export default function ContactPage() {
                         Your message has been received. Our team will contact you within 24 hours.
                       </p>
                       <Button
-                        onClick={() => setIsSubmitted(false)}
+                        onClick={resetForm}
                         variant="outline"
                         className="border-border hover:bg-muted bg-transparent"
                       >
@@ -137,93 +176,114 @@ export default function ContactPage() {
                       </Button>
                     </CardContent>
                   </Card>
-                ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="name">Full Name *</Label>
-                        <Input
-                          id="name"
-                          required
-                          placeholder="John Smith"
-                          value={formState.name}
-                          onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                          className="bg-card border-border"
-                        />
+                ) : submissionStatus === "error" ? (
+                  <Card className="bg-destructive/10 border-destructive">
+                    <CardContent className="p-8 text-center space-y-4">
+                      <div className="w-16 h-16 bg-destructive/10 rounded-full flex items-center justify-center mx-auto">
+                        <CheckCircle className="h-8 w-8 text-destructive" />
                       </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="email">Email Address *</Label>
-                        <Input
-                          id="email"
-                          type="email"
-                          required
-                          placeholder="john@company.com"
-                          value={formState.email}
-                          onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                          className="bg-card border-border"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="phone">Phone Number</Label>
-                        <Input
-                          id="phone"
-                          type="tel"
-                          placeholder="+91 00000 00000"
-                          value={formState.phone}
-                          onChange={(e) => setFormState({ ...formState, phone: e.target.value })}
-                          className="bg-card border-border"
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="company">Company Name</Label>
-                        <Input
-                          id="company"
-                          placeholder="Your Company"
-                          value={formState.company}
-                          onChange={(e) => setFormState({ ...formState, company: e.target.value })}
-                          className="bg-card border-border"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="service">Service of Interest *</Label>
-                      <select
-                        id="service"
-                        required
-                        value={formState.service}
-                        onChange={(e) => setFormState({ ...formState, service: e.target.value })}
-                        className="w-full h-10 px-3 rounded-md bg-card border border-border text-foreground"
+                      <h3 className="text-xl font-semibold text-destructive-foreground">Submission Failed</h3>
+                      <p className="text-destructive-foreground/80">
+                        Something went wrong. Please try again later.
+                      </p>
+                      <Button
+                        onClick={resetForm}
+                        variant="outline"
+                        className="border-destructive hover:bg-destructive/20 bg-transparent"
                       >
-                        <option value="">Select a service</option>
-                        {services.map((service) => (
-                          <option key={service} value={service}>
-                            {service}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
+                        Try Again
+                      </Button>
+                    </CardContent>
+                  </Card>
+                ): (
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <fieldset disabled={submissionStatus === "loading"}>
+                      <div className="grid sm:grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <Label htmlFor="name">Full Name *</Label>
+                          <Input
+                            id="name"
+                            required
+                            placeholder="John Smith"
+                            value={formState.name}
+                            onChange={(e) => setFormState({ ...formState, name: e.target.value })}
+                            className="bg-card border-border"
+                          />
+                        </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="email">Email Address *</Label>
+                          <Input
+                            id="email"
+                            type="email"
+                            required
+                            placeholder="john@company.com"
+                            value={formState.email}
+                            onChange={(e) => setFormState({ ...formState, email: e.target.value })}
+                            className="bg-card border-border"
+                          />
+                        </div>
+                      </div>
 
-                    <div className="space-y-2">
-                      <Label htmlFor="message">Message *</Label>
-                      <Textarea
-                        id="message"
-                        required
-                        placeholder="Tell us about your fire safety needs..."
-                        rows={5}
-                        value={formState.message}
-                        onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                        className="bg-card border-border resize-none"
-                      />
-                    </div>
+                      <div className="grid sm:grid-cols-2 gap-4 mt-4">
+                        <div className="space-y-2">
+                          <Label htmlFor="phone">Phone Number</Label>
+                          <Input
+                            id="phone"
+                            type="tel"
+                            placeholder="+91 00000 00000"
+                            value={formState.phone}
+                            onChange={(e) => setFormState({ ...formState, phone: e.target.value })}
+                            className="bg-card border-border"
+                          />
+                        </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="company">Company Name</Label>
+                          <Input
+                            id="company"
+                            placeholder="Your Company"
+                            value={formState.company}
+                            onChange={(e) => setFormState({ ...formState, company: e.target.value })}
+                            className="bg-card border-border"
+                          />
+                        </div>
+                      </div>
 
-                    <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                      <Send className="mr-2 h-4 w-4" />
-                      Send Message
-                    </Button>
+                      <div className="space-y-2 mt-4">
+                        <Label htmlFor="service">Service of Interest *</Label>
+                        <select
+                          id="service"
+                          required
+                          value={formState.service}
+                          onChange={(e) => setFormState({ ...formState, service: e.target.value })}
+                          className="w-full h-10 px-3 rounded-md bg-card border border-border text-foreground"
+                        >
+                          <option value="">Select a service</option>
+                          {services.map((service) => (
+                            <option key={service} value={service}>
+                              {service}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+
+                      <div className="space-y-2 mt-4 mb-4">
+                        <Label htmlFor="message">Message *</Label>
+                        <Textarea
+                          id="message"
+                          required
+                          placeholder="Tell us about your fire safety needs..."
+                          rows={5}
+                          value={formState.message}
+                          onChange={(e) => setFormState({ ...formState, message: e.target.value })}
+                          className="bg-card border-border resize-none"
+                        />
+                      </div>
+
+                      <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" disabled={submissionStatus === "loading"}>
+                        {submissionStatus === "loading" ? "Sending..." : "Send Message"}
+                        {submissionStatus !== "loading" && <Send className="mr-2 h-4 w-4" />}
+                      </Button>
+                    </fieldset>
                   </form>
                 )}
               </div>
